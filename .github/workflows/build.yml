@@ -1,10 +1,15 @@
 name: Build
 on:
-  workflow_dispatch:
-      inputs:
-        package_name:
-          description: "Package name of the game:"
-          required: true
+  # Trigger the workflow on push events, but only when game.h is modified
+  push:
+    paths:
+      - 'module/src/main/cpp/game.h'
+
+  workflow_dispatch: # Still keeping this if you want to trigger it manually
+    inputs:
+      package_name:
+        description: "Package name of the game:"
+        required: true
 
 jobs:
   build:

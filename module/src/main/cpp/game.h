@@ -5,6 +5,6 @@
 #ifndef ZYGISK_IL2CPPDUMPER_GAME_H
 #define ZYGISK_IL2CPPDUMPER_GAME_H
 
-#define GamePackageName "com.indusgame.play"
+#define GamePackageName "com.criticalforceentertainment.criticalops"
 
 #endif //ZYGISK_IL2CPPDUMPER_GAME_H
